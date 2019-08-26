@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@color/orange_red"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvShelf"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:gravity="center"
+        android:lineSpacingExtra="14sp"
+        android:text="SHELF"
+        android:textAllCaps="false"
+        android:textColor="@color/yellow"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:background="@color/white"
+        android:id="@+id/ivBook"
+        android:layout_width="match_parent"
+        android:layout_height="101dp"
+        android:layout_below="@id/tvShelf"
+        app:srcCompat="@drawable/ic_library_books_black_24dp" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_marginTop="60dp"
+        android:layout_below="@id/ivBook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>
